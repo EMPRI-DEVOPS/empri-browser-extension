@@ -428,6 +428,12 @@ function calcDistanceToClosestSibling(el) {
         saveAndRemoveAllPopups();
       }
     };
+    document.addEventListener('keydown', function(event) {
+      if (event.key === "Escape") {
+        saveAndRemoveAllPopups();
+      }
+    });
+
 
     // - send study report if participanting and necessary
     browser.storage.local.get("studyOptIn")
