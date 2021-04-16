@@ -2,8 +2,8 @@ name: Study Build
 
 on:
   push:
-    branches:
-      - study
+  create:
+    tags:
 
 jobs:
   build:
