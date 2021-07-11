@@ -265,7 +265,7 @@ export function sendReport() {
     )) {
       console.log("Try to send report...");
       console.log(report);
-      return fetch(API_URL + "/v1/data_point", {
+      return fetch(API_URL + "/v2/data_point", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -315,7 +315,7 @@ export function requestDeletion() {
       return false;
     }
 
-    return fetch(API_URL + "/v1/participant/" + partId, {
+    return fetch(API_URL + "/v2/participant/" + partId, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
