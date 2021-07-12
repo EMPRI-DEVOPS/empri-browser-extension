@@ -8,6 +8,12 @@
 
   <body>
     <div class="content">
+      <img id="logo" src="../images/on.svg" alt="">
+      <h1>
+        <span class="pretitle">Transparency & Control</span>
+        GitHub Timestamp Privacy Study
+      </h1>
+      <h2>Collected Study Data</h2>
       <table id="participant-data">
         <caption>General participant data</caption>
         <tbody>
@@ -67,9 +73,16 @@
         </tbody>
       </table>
       <form>
-        <button id="clipcopy">Copy Report to Clipboard</button>
-        <button id="studypurge">Reset Study Data</button>
+        <button id="clipcopy">Copy to Clipboard</button>
       </form>
+      <details id="expert-options">
+        <summary>Expert options</summary>
+        <form class="box box-warn">
+          <span>Warning</span>
+          Resetting will delete your local study data and start a new participation.
+          <button id="studypurge">Reset Study Data</button>
+        </form>
+      </details>
     </div>
     <script src="../scripts/studydataview.js"></script>
   </body>
